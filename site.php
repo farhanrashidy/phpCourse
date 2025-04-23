@@ -6,27 +6,16 @@
     </head>
     <body>
 
-        <?php
-            /*$characterName = "Farhan";
-            $characterAge = 21;
 
-            echo "There once was a man name $characterName <br>";
-            echo "He was $characterAge years old <br>";
-            $characterName = "Rashidy";
-            echo "He really liked the name $characterName <br>";
-            echo "But didn't like being $characterAge <br>";*/
-            /*
-            $phrase = "to be or not to be"; // string
-            $age = 30; // integers
-            $gpa = 2.1; // float
-            $isMale = true; // boolean
-            echo "Hello<br>" ;
-            echo "$phrase <br>";
-            */
-
-
-
-        ?>
-
+        <form action="site.php" method="get">
+            Name: <input type="text" name="name">
+            <br>
+            Age: <input type="number" name="age">
+            <input type="submit">
+        </form>
+        <br>
+        Hello <?php echo $_GET["name"]; ?>
+        <br>
+        You are <?php echo $_GET["age"]; ?> years old!
     </body>
 </html>
